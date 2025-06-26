@@ -2,7 +2,7 @@ Gradle DF test
 ==============
 
 This is a simple Gradle project to run a test of an integration to Google DialogFlow CX.
-The test  will return a response from DialogFlow agent based on the query text passed in parameters
+The test  will return a response from DialogFlow agent based on the query text in parameters
 
 Running the test
 -------------------
