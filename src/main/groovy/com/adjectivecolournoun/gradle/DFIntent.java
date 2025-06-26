@@ -23,9 +23,8 @@ public class DFIntent {
 
                 // Build the query with the TextInput
                 QueryInput queryInput = QueryInput.newBuilder().setText(textInput).setLanguageCode(languageCode).build();
-
-                // Performs the detect intent request
-                //DetectIntentRequest dIR =  DetectIntentRequest.newBuilder().setQueryInput(queryInput).build();
+                
+                // Performs the detect intent request              
                 DetectIntentRequest dIR = DetectIntentRequest.newBuilder().setSession(session.toString()).setQueryInput(queryInput).build();
                 DetectIntentResponse response = sessionsClient.detectIntent(dIR);
 
